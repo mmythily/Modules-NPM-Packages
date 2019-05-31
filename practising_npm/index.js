@@ -2,9 +2,10 @@ const chalk = require ('chalk');
 
 //Using the chalk package to bring some color.
 const message = {hello:'Hello ' + chalk.yellow('World'),
-                what: `\nWhat are your ${chalk.green('hobbies')}`,
-                sing: `\nHello from the ${chalk.red('other')} ${chalk.blue('side')}`
+                sing: `\nHello from the ${chalk.red('other')} ${chalk.blue('side')}`,
+                chain: `\n${chalk.underline.red('Here we go again')}`,
+                anotherchain: `\n${chalk.blue.bgRed.bold('WOW')}`
 }
 
 //Output
-console.log(message.hello, message.what, message.sing);
+console.log(message.hello, message.sing, message.chain, message.anotherchain);
